@@ -1,9 +1,9 @@
 /*-----------------------------------------------------------------
-Theme Name: Neotech
+Theme Name: Niotech
 Author: Gramentheme
 Author URI: https://themeforest.net/user/gramentheme
 Version: 1.0.0 
-Description: Neotech - App Landing HTML Template <
+Description: Niotech - App Landing HTML Template <
 
 -------------------------------------------------------------------
  CSS TABLE OF CONTENTS
@@ -710,7 +710,7 @@ input[type=radio]:checked ~ label::before {
 /*----------------------------------------------
     # Container  style here
 ----------------------------------------------*/
-@media (min-width: 1650px) {
+@media (min-width: 550px) {
   .header-1 .container {
     max-width: 1620px;
   }
@@ -757,11 +757,23 @@ input[type=radio]:checked ~ label::before {
   .wcu-container-wrapper.style2 > .container {
     max-width: 1820px;
   }
+
+  .wcu-container-wrapper.style1 {
+    border-radius: 50px;
+  background: #FAF8FF;
+  }
+
+  
   .about-container-wrapper.style2 .container {
     max-width: 1820px;
   }
   .about-wrapper.style2 .container {
     max-width: 1450px;
+  }
+
+  .about-wrapper .what-we-content .list-items-area .list-items {
+  display: flex;
+  gap: 20px;
   }
   .project-container-wrapper.style2 .container {
     max-width: 1790px;
@@ -778,9 +790,25 @@ input[type=radio]:checked ~ label::before {
   .footer-bottom.style1 .container {
     max-width: 1580px;
   }
+
+  .footer-bottom.style1 .footer-logo span, .footer-bottom .footer-logo span a {
+    color: #797979;
+    font-size: 56px;
+    opacity: .85;
+  }
+
+  .caramel-regular {
+    font-family: "Caramel", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
   .service-details-container-wrapper .container {
     max-width: 1440px;
   }
+
+
+
 }
 /* 07.Animation */
 /*----------------------------------------------
@@ -1997,6 +2025,9 @@ input[type=radio]:checked ~ label::before {
   }
 }
 
+
+
+
 .ml-50 {
   margin-left: 50px;
 }
@@ -2575,7 +2606,7 @@ input[type=radio]:checked ~ label::before {
   display: inline-block;
   z-index: 99;
   right: 30px;
-  bottom: 30px;
+  bottom: 100px;
   transition: all 0.4s ease-in-out;
   opacity: 0;
   visibility: hidden;
@@ -2897,12 +2928,12 @@ input[type=radio]:checked ~ label::before {
 }
 .fancy-box.style2 {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 19px;
   margin-bottom: 30px;
 }
 .fancy-box.style2 .content {
-  max-width: 205px;
+  /*max-width: 205px;*/
 }
 .fancy-box.style2 .content h4 {
   color: var(--title);
@@ -5684,7 +5715,7 @@ input.main-search-input::placeholder {
   }
 }
 .footer-bottom.style1 .footer-wrapper p {
-  color: #797979;
+  color: #282c32;
   font-family: "Nunito", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -6205,17 +6236,48 @@ input.main-search-input::placeholder {
 }
 .hero-3 .hero-image {
   margin-right: -60%;
+  position: relative;
+}
+.hero-3 .hero-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 26px 0px 0px 26px;
+  border: 1rem solid #d0cbec;
+}
+
+.hero-3 .hero-image .mobile-image {
+  position: absolute;
+  bottom: 0;
+  left: -60px;
+  max-width: 180px;
+}
+@media (max-width: 1399px) {
+  .hero-3 .hero-image .mobile-image {
+    max-width: 140px;
+    left: 0;
+  }
+}
+@media (max-width: 1199px) {
+  .hero-3 .hero-image .mobile-image {
+    max-width: 180px;
+  }
+}
+@media (max-width: 767px) {
+  .hero-3 .hero-image .mobile-image {
+    max-width: 100px;
+  }
 }
 @media (max-width: 1199px) {
   .hero-3 .hero-image {
     margin-right: 0;
   }
 }
-.hero-3 .hero-image img {
-  width: 100%;
-  height: 100%;
-  border-radius: 26px 0px 0px 26px;
+
+.hero-3 .hero-image .mobile-image img{
+  border:none!important;
 }
+
+
 
 /* 17.Brand */
 .brandSliderOne {
@@ -6692,7 +6754,7 @@ input.main-search-input::placeholder {
 
 /* 21.Wcu */
 .wcu-wrapper.style1 {
-  margin-top: 100px;
+  margin-top: 40px;
 }
 .wcu-wrapper.style1 .wcu-thumb {
   position: relative;

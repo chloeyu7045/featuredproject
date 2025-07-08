@@ -1,9 +1,9 @@
 /*-----------------------------------------------------------------
-Theme Name: Neotech
+Theme Name: Niotech
 Author: Gramentheme
 Author URI: https://themeforest.net/user/gramentheme
 Version: 1.0.0 
-Description: Neotech - App Landing HTML Template <
+Description: Niotech - App Landing HTML Template <
 
 -------------------------------------------------------------------
 JS TABLE OF CONTENTS
@@ -269,21 +269,25 @@ JS TABLE OF CONTENTS
             return false;
         });
 
-        if($('.testimonial-slider-3').length > 0) {
-            const testimonialSlider3 = new Swiper(".testimonial-slider-3", {
-                spaceBetween: 30,
-                speed: 1500,
-                loop: true,
-                autoplay: {
-                    delay: 1500,
-                    disableOnInteraction: false,
-                },
-                navigation: {
-                    nextEl: ".array-prev",
-                    prevEl: ".array-next",
-                },
-            });
-        }
+        // if($('.testimonial-slider-3').length > 0) {
+        //     const testimonialSlider3 = new Swiper(".testimonial-slider-3", {
+        //         spaceBetween: 30,
+        //         speed: 1500,
+        //         loop: true,
+        //         autoplay: {
+        //             delay: 1500,
+        //             disableOnInteraction: false,
+        //         },
+        //         navigation: {
+        //             nextEl: ".array-prev",
+        //             prevEl: ".array-next",
+        //         },
+        //         autoplay: {
+        //           delay: 5000,
+        //           disableOnInteraction: false,
+        //         }
+        //     });
+        // }
 
 
 
