@@ -775,6 +775,15 @@ input[type=radio]:checked ~ label::before {
   display: flex;
   gap: 20px;
   }
+
+.about-wrapper .what-we-content .list-items-area .list-items:not(:last-child){
+  border-bottom: 1px solid var(--border);
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+
+}
+
+
   .project-container-wrapper.style2 .container {
     max-width: 1790px;
   }
