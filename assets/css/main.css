@@ -3750,6 +3750,14 @@ input.main-search-input::placeholder {
 .section-padding {
   padding: 120px 0;
 }
+.section-padding.small {
+  padding: 40px 0;
+}
+
+.section-padding.large{
+  padding: 180px 0;
+}
+
 @media (max-width: 1199px) {
   .section-padding {
     padding: 100px 0;
@@ -6489,11 +6497,11 @@ input.main-search-input::placeholder {
 /* 19.Work Process */
 .work-process-box.style1 {
   text-align: center;
-  max-width: 210px;
+  max-width: 300px;
   margin: auto;
 }
 .work-process-box.style1.child2 {
-  margin-top: 55px;
+  margin-top: 70px;
 }
 .work-process-box.style1 .step {
   color: var(--theme);
