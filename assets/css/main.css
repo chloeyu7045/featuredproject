@@ -736,6 +736,12 @@ input[type=radio]:checked ~ label::before {
     font-style: normal;
 }
 
+.footer-bottom.style1 .footer-logo span, .footer-bottom .footer-logo span a {
+    color: #797979;
+    font-size: 56px;
+    opacity: .85;
+  }
+
 @media (min-width: 550px) {
   .header-1 .container {
     max-width: 1620px;
@@ -834,19 +840,11 @@ input[type=radio]:checked ~ label::before {
     max-width: 1580px;
   }
 
-  .footer-bottom.style1 .footer-logo span, .footer-bottom .footer-logo span a {
-    color: #797979;
-    font-size: 56px;
-    opacity: .85;
-  }
-
-  
-
   .service-details-container-wrapper .container {
     max-width: 1440px;
   }
 
-
+  
 
 }
 /* 07.Animation */
@@ -2062,6 +2060,13 @@ input[type=radio]:checked ~ label::before {
   .mb-40 {
     margin-bottom: 25px;
   }
+
+  .footer-bottom.style1 .footer-logo span, .footer-bottom .footer-logo span a {
+
+    font-size: 36px;
+
+  }
+
 }
 
 
