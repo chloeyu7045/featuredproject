@@ -714,11 +714,6 @@ input[type=radio]:checked ~ label::before {
 .counter-wrapper.style1 .container .counter-box {
     margin-bottom: 60px;
   }
- 
-
-.counter-wrapper.style1 .container .counter-box:last-child {
-    margin-bottom: 0px;
-  }
 
 .counter-wrapper.style1 .container .counter-box h2{ 
   margin-bottom: 20px;
@@ -773,9 +768,12 @@ input[type=radio]:checked ~ label::before {
   .counter-container-wrapper.style1 .container {
     max-width: 1820px;
   }
+  
+
   .counter-wrapper.style1 .container .counter-box {
     margin-bottom: 0px;
   }
+ 
 
 
   .counter-wrapper.style1 .container .counter-box h2{ 
