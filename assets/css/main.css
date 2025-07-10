@@ -4088,7 +4088,10 @@ input.main-search-input::placeholder {
   }
 }
 .header-1.header-3 {
-  background-color: var(--white);
+  /*background-color: var(--white);*/
+  position: fixed;
+  top:16px;
+  z-index: 3;
 }
 .header-1.header-3 .container-fluid {
   padding: 0 225px;
@@ -6292,6 +6295,7 @@ input.main-search-input::placeholder {
 
 .hero-3 .hero-image .mobile-image img{
   border:none!important;
+  border-radius: 0;
 }
 
 
@@ -6353,10 +6357,14 @@ input.main-search-input::placeholder {
   z-index: 1;
 }
 .about-wrapper.style1 .about-thumb .thumbShape3 {
-  position: absolute;
+  /*position: absolute;
   top: -10px;
   left: -20px;
-  z-index: 1;
+  z-index: 1;*/
+  position: absolute;
+    left: -75px;
+    z-index: 1;
+    bottom: 58px;
 }
 .about-wrapper.style1 .about-thumb .thumbShape4 {
   position: absolute;
@@ -9521,11 +9529,11 @@ input.main-search-input::placeholder {
   padding: 40px 30px;
   background-color: var(--bg-2);
   margin-bottom: 30px;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
 }
 .main-sidebar .single-sidebar-widget .wid-title {
   margin-bottom: 25px;

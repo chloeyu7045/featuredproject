@@ -76,9 +76,9 @@ JS TABLE OF CONTENTS
         -----------------------------------*/
         $(window).scroll(function () {
             if ($(this).scrollTop() > 250) {
-                $("#header-sticky").addClass("sticky");
+                $("#header-sticky").fadeOut();
             } else {
-                $("#header-sticky").removeClass("sticky");
+                $("#header-sticky").show();
             }
         });
 
@@ -269,25 +269,25 @@ JS TABLE OF CONTENTS
             return false;
         });
 
-        // if($('.testimonial-slider-3').length > 0) {
-        //     const testimonialSlider3 = new Swiper(".testimonial-slider-3", {
-        //         spaceBetween: 30,
-        //         speed: 1500,
-        //         loop: true,
-        //         autoplay: {
-        //             delay: 1500,
-        //             disableOnInteraction: false,
-        //         },
-        //         navigation: {
-        //             nextEl: ".array-prev",
-        //             prevEl: ".array-next",
-        //         },
-        //         autoplay: {
-        //           delay: 5000,
-        //           disableOnInteraction: false,
-        //         }
-        //     });
-        // }
+        if($('.testimonial-slider-3').length > 0) {
+            const testimonialSlider3 = new Swiper(".testimonial-slider-3", {
+                spaceBetween: 30,
+                speed: 1500,
+                loop: true,
+                autoplay: {
+                    delay: 1500,
+                    disableOnInteraction: false,
+                },
+                navigation: {
+                    nextEl: ".array-prev",
+                    prevEl: ".array-next",
+                },
+                autoplay: {
+                  delay: 5000,
+                  disableOnInteraction: false,
+                }
+            });
+        }
 
 
 
