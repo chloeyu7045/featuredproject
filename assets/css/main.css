@@ -63,7 +63,7 @@ Description: Niotech - App Landing HTML Template <
   --title: #282C32;
   --header: #282C32;
   --orange: #e78c45;
-  --text: #858585;
+  --text: #565656;
   --text2: #cbcbcb;
   --border: #E6E6E6;
   --border-2: #F1F1F1;
@@ -710,6 +710,37 @@ input[type=radio]:checked ~ label::before {
 /*----------------------------------------------
     # Container  style here
 ----------------------------------------------*/
+
+.counter-wrapper.style1 .container .counter-box {
+    margin-bottom: 60px;
+  }
+ 
+
+.counter-wrapper.style1 .container .counter-box:last-child {
+    margin-bottom: 0px;
+  }
+
+.counter-wrapper.style1 .container .counter-box h2{ 
+  margin-bottom: 20px;
+}  
+
+
+.counter-wrapper.style1 .container .counter-box h2 i{ 
+  display: block;
+}  
+ 
+
+ .about-wrapper .what-we-content .list-items-area .list-items {
+  display: flex;
+  gap: 20px;
+  }
+
+  .caramel-regular {
+    font-family: "Caramel", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
 @media (min-width: 550px) {
   .header-1 .container {
     max-width: 1620px;
@@ -742,9 +773,17 @@ input[type=radio]:checked ~ label::before {
   .counter-container-wrapper.style1 .container {
     max-width: 1820px;
   }
-  .counter-wrapper.style1 .container {
-    max-width: 1450px;
+  .counter-wrapper.style1 .container .counter-box {
+    margin-bottom: 0px;
   }
+
+
+  .counter-wrapper.style1 .container .counter-box h2{ 
+  margin-bottom: 10px;
+}  
+
+
+
   .testimonial-container-wrapper.style1 > .container {
     max-width: 1820px;
   }
@@ -771,10 +810,7 @@ input[type=radio]:checked ~ label::before {
     max-width: 1450px;
   }
 
-  .about-wrapper .what-we-content .list-items-area .list-items {
-  display: flex;
-  gap: 20px;
-  }
+ 
 
 .about-wrapper .what-we-content .list-items-area .list-items:not(:last-child){
   border-bottom: 1px solid var(--border);
@@ -806,11 +842,7 @@ input[type=radio]:checked ~ label::before {
     opacity: .85;
   }
 
-  .caramel-regular {
-    font-family: "Caramel", cursive;
-    font-weight: 400;
-    font-style: normal;
-}
+  
 
   .service-details-container-wrapper .container {
     max-width: 1440px;
@@ -2946,8 +2978,8 @@ input[type=radio]:checked ~ label::before {
 }
 .fancy-box.style2 .content h4 {
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
-  font-size: 24px;
+  /*font-family: "Urbanist", sans-serif;*/
+  font-size: 20px;
   font-style: normal;
   font-weight: 600;
   line-height: 34px;
@@ -6235,6 +6267,7 @@ input.main-search-input::placeholder {
 }
 .hero-3 .hero-content h1 span {
   color: var(--theme);
+  display: block;
 }
 .hero-3 .hero-content p {
   font-weight: 500;
@@ -6566,7 +6599,7 @@ input.main-search-input::placeholder {
 }
 @media (max-width: 1199px) {
   .work-process-wrapper.style1 {
-    margin-top: 30px;
+    margin-top: 0px;
   }
 }
 .work-process-wrapper.style1 .shape {
@@ -7420,12 +7453,26 @@ input.main-search-input::placeholder {
 .testimonial-wrapper-3 .tesimonial-content p {
   font-size: 16px;
   line-height: 1.6;
+  font-weight: 500;
   color: #515151;
 }
 @media (max-width: 767px) {
-  .testimonial-wrapper-3 .tesimonial-content p {
-    font-size: 20px;
-  }
+  
+
+
+  .testimonial-section-3 .section-title-area {
+
+      align-items: start;
+   }
+
+  .testimonial-wrapper-3 .tesimonial-content:first-child {
+  width: 100%;
+}
+
+.testimonial-wrapper-3 .tesimonial-content:last-child {
+  width: 100%;
+}
+
 }
 .testimonial-wrapper-3 .tesimonial-content .client-info-area {
   margin-top: 70px;
@@ -7702,7 +7749,9 @@ input.main-search-input::placeholder {
   font-size: 20px;
   margin-bottom: 10px;
 }
-.what-we-wrapper .what-we-content .list-items-area .list-items .content p {
+.what-we-wrapper .what-we-content .list-items-area .list-items .content p , .about-wrapper .what-we-content .list-items-area .list-items .content p
+, .about-wrapper  p
+{
   font-weight: 500;
   color: #565656;
 }
