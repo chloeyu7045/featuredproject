@@ -60,6 +60,7 @@ Description: Niotech - App Landing HTML Template <
   --theme: #7444FD;
   --theme2: #F9F3EF;
   --theme3: #FAF8FF;
+  --theme-blue: #445bfd;
   --title: #282C32;
   --header: #282C32;
   --orange: #e78c45;
@@ -72,6 +73,7 @@ Description: Niotech - App Landing HTML Template <
   --border-5: #565656;
   --bg-1: #161921;
   --bg-2: #F6F7FF;
+  --bg-blue:#edefff;
   --box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.06);
 }
 
@@ -474,16 +476,20 @@ input[type=radio]:checked ~ label::before {
 }
 .theme-btn.style2 {
   display: inline-block;
-  background: transparent;
+  background:var(--white)!important;
   border: 1px solid var(--border-5);
   color: var(--title);
 }
+
+
+
+
 .theme-btn.style2 i, .theme-btn.style2 svg {
   margin-left: 6px;
 }
 .theme-btn.style2:before {
   transition-duration: 800ms;
-  background: var(--theme);
+  background: var(--title);
 }
 .theme-btn.style2 svg path,
 .theme-btn.style2 svg rect {
@@ -494,9 +500,11 @@ input[type=radio]:checked ~ label::before {
   -ms-transition: all 0.4s;
   -o-transition: all 0.4s;
 }
+
 .theme-btn.style2:hover svg path,
 .theme-btn.style2:hover svg rect {
   fill: var(--white);
+
 }
 .theme-btn.style3 {
   display: flex;
