@@ -74,9 +74,12 @@ Description: Niotech - App Landing HTML Template <
   --bg-1: #161921;
   --bg-2: #F6F7FF;
   --bg-blue:#edefff;
+  --bg-blue-darker:#d2d7ff;
   --box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.06);
 }
 
+
+#d2d7ff
 /* 03.Typography */
 /* --------------------------------------------
     Template Default Fonts & Fonts Styles
@@ -2710,12 +2713,20 @@ input[type=radio]:checked ~ label::before {
   margin-bottom: 15px;
   border-radius: 100px;
 }
+
+
+
+
+
 .section-title .subtitle.bg2 {
   background: rgba(255, 255, 255, 0.15);
 }
 .section-title .subtitle img {
   margin-left: 3px;
 }
+
+
+
 .section-title .title {
   color: var(--title);
   font-family: "Urbanist", sans-serif;
@@ -6285,6 +6296,7 @@ input.main-search-input::placeholder {
   max-width: 760px;
   line-height: 175%;
   color: #565656;
+  font-size: 14px;
 }
 .hero-3 .hero-content .btn-wrapper {
   display: flex;
@@ -6589,7 +6601,7 @@ input.main-search-input::placeholder {
   color: var(--text);
   text-align: center;
   font-family: "Urbanist", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 28px;
@@ -7462,7 +7474,7 @@ input.main-search-input::placeholder {
   width: 30%;
 }
 .testimonial-wrapper-3 .tesimonial-content p {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.6;
   font-weight: 500;
   color: #515151;
@@ -7761,10 +7773,11 @@ input.main-search-input::placeholder {
   margin-bottom: 10px;
 }
 .what-we-wrapper .what-we-content .list-items-area .list-items .content p , .about-wrapper .what-we-content .list-items-area .list-items .content p
-, .about-wrapper  p
+, .about-wrapper  p, .wcu-content p
 {
   font-weight: 500;
   color: #565656;
+  font-size: 14px;
 }
 
 .used-technology-section .nav {
