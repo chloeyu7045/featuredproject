@@ -7773,7 +7773,7 @@ input.main-search-input::placeholder {
   margin-bottom: 10px;
 }
 .what-we-wrapper .what-we-content .list-items-area .list-items .content p , .about-wrapper .what-we-content .list-items-area .list-items .content p
-, .about-wrapper  p, .wcu-content p
+, .about-wrapper  p, .wcu-content p, .wcu-content li
 {
   font-weight: 500;
   color: #565656;
