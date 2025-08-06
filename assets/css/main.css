@@ -61,6 +61,7 @@ Description: Niotech - App Landing HTML Template <
   --theme2: #F9F3EF;
   --theme3: #FAF8FF;
   --theme-blue: #445bfd;
+  --theme-red: #EF454E;
   --title: #282C32;
   --header: #282C32;
   --orange: #e78c45;
@@ -71,9 +72,11 @@ Description: Niotech - App Landing HTML Template <
   --border-3: #D8D8D8;
   --border-4: #E0E0E0;
   --border-5: #565656;
+  --border-red: #EF454E;
   --bg-1: #161921;
   --bg-2: #F6F7FF;
   --bg-blue:#edefff;
+  --bg-red:#fce0e2;
   --bg-blue-darker:#d2d7ff;
   --box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.06);
 }
@@ -6937,7 +6940,7 @@ input.main-search-input::placeholder {
   margin-left: 30px;
   width: 100%;
 }
-.wcu-wrapper.style3 .wcu-thumb .main-thumb img {
+.main-thumb img {
   max-width: 100%;
 }
 .wcu-wrapper.style3 .wcu-thumb .thumb-box {
@@ -7759,16 +7762,24 @@ input.main-search-input::placeholder {
 .what-we-wrapper .what-we-content .list-items-area {
   margin-top: 30px;
 }
-.what-we-wrapper .what-we-content .list-items-area .list-items {
+.what-we-wrapper .what-we-content .list-items-area .list-items , .wcu-wrapper .list-items-area .list-items {
   display: flex;
   gap: 20px;
 }
-.what-we-wrapper .what-we-content .list-items-area .list-items:not(:last-child) {
+.what-we-wrapper .what-we-content .list-items-area .list-items:not(:last-child) , .wcu-wrapper .list-items-area .list-items:not(:last-child){
   border-bottom: 1px solid var(--border);
   margin-bottom: 30px;
   padding-bottom: 30px;
 }
-.what-we-wrapper .what-we-content .list-items-area .list-items .content h3 {
+
+.wcu-wrapper .list-items-area .list-items:not(:last-child){
+  border-bottom: 1px solid var(--border-5);
+}
+
+.what-we-wrapper .what-we-content .list-items-area .list-items .content h3, .wcu-wrapper .list-items-area .list-items h3 ,
+
+.about-wrapper .what-we-content .list-items-area .list-items .content h3
+{
   font-size: 20px;
   margin-bottom: 10px;
 }
