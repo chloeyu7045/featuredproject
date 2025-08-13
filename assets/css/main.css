@@ -739,7 +739,7 @@ input[type=radio]:checked ~ label::before {
 }  
 
 .counter-wrapper.style1 .container .counter-box a, .counter-wrapper.style1 .container .counter-box a:hover{ 
-  color: #fff;
+  color: #fff!important;
 }  
  
 
