@@ -737,6 +737,10 @@ input[type=radio]:checked ~ label::before {
 .counter-wrapper.style1 .container .counter-box h2 i{ 
   display: block;
 }  
+
+.counter-wrapper.style1 .container .counter-box a, .counter-wrapper.style1 .container .counter-box a:hover{ 
+  color: #fff;
+}  
  
 
  .about-wrapper .what-we-content .list-items-area .list-items {
