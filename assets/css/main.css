@@ -2703,7 +2703,7 @@ input[type=radio]:checked ~ label::before {
   }
 }
 
-.section-title .subtitle {
+.section-title .subtitle{
   display: inline-flex;
   padding: 4px 10px;
   align-items: center;
@@ -2721,7 +2721,9 @@ input[type=radio]:checked ~ label::before {
   border-radius: 100px;
 }
 
-
+.section-title .subtitle a{
+   color: var(--theme);
+}
 
 
 
