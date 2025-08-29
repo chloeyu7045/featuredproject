@@ -10564,3 +10564,10 @@ textarea.is-invalid {
   font-weight: 500;
   line-height: 24px;
 }/*# sourceMappingURL=main.css.map */
+
+
+.flow-wrapper .thumb img{
+   width: 100%;
+  height: 100%;
+
+}
