@@ -3212,9 +3212,9 @@ input[type=radio]:checked ~ label::before {
 }
 
 .checklist.style1 li {
-  color: var(--title);
+  color: var(--text);
   font-family: "Urbanist", sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 28px;
@@ -6573,6 +6573,21 @@ input.main-search-input::placeholder {
   max-width: 300px;
   margin: auto;
 }
+
+.work-process-box.style1.max-content{
+  max-width: max-content;
+  
+}
+
+.work-process-box.style1.max-content .text{
+  text-align: left;
+}
+
+.work-process-box.style1.max-content .text i{
+  color: var(--theme);
+}
+
+
 .work-process-box.style1.child2 {
   margin-top: 70px;
 }
