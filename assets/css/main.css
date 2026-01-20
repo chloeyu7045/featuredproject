@@ -2058,6 +2058,10 @@ input[type=radio]:checked ~ label::before {
   margin-right: 7px;
 }
 
+.mb-10 {
+  margin-bottom: 10px;
+}
+
 .mb-20 {
   margin-bottom: 20px;
 }
@@ -7779,7 +7783,7 @@ input.main-search-input::placeholder {
 .what-we-wrapper .what-we-content .section-title p {
   font-weight: 500;
   color: #565656;
-  font-size: 14px;
+  font-size: 15px;
 }
 .what-we-wrapper .what-we-content .list-items-area {
   margin-top: 30px;
