@@ -733,6 +733,10 @@ input[type=radio]:checked ~ label::before {
   margin-bottom: 20px;
 }  
 
+.counter-wrapper.style1 .container .counter-box h3{ 
+  font-size: 24px;
+}  
+
 
 .counter-wrapper.style1 .container .counter-box h2 i{ 
   display: block;
@@ -2197,6 +2201,10 @@ input[type=radio]:checked ~ label::before {
   .pb-262 {
     padding-bottom: 80px !important;
   }
+}
+
+.w-100{
+  width: 100%;
 }
 
 .mxw-345 {
@@ -3818,7 +3826,7 @@ input.main-search-input::placeholder {
   padding: 120px 0;
 }
 .section-padding.small {
-  padding: 40px 0;
+  padding: 40px;
 }
 
 .section-padding.large{
@@ -6772,11 +6780,12 @@ input.main-search-input::placeholder {
   -ms-transform: rotate(0);
   -o-transform: rotate(0);
 }
-.wp-content .accordion-item .accordion-header .accordion-button.collapsed {
+.wp-content .accordion-item .accordion-header .accordion-button.collapsed , .title_completion{
   background-color: transparent;
   border: 1px solid var(--border);
   padding: 18px 20px;
   color: var(--title);
+  border-radius: 6px;
 }
 .wp-content .accordion-item .accordion-collapse {
   border: none;
@@ -6863,7 +6872,7 @@ input.main-search-input::placeholder {
 
 /* 21.Wcu */
 .wcu-wrapper.style1 {
-  margin-top: 40px;
+  /*margin-top: 40px;*/
 }
 .wcu-wrapper.style1 .wcu-thumb {
   position: relative;
@@ -7085,6 +7094,16 @@ input.main-search-input::placeholder {
   color: var(--white);
   font-family: "Urbanist", sans-serif;
   font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: -0.36px;
+}
+
+.counter-box.style1 .text2 {
+  color: var(--white);
+  font-family: "Urbanist", sans-serif;
+  font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: 26px;
@@ -7949,7 +7968,6 @@ input.main-search-input::placeholder {
 }
 .pricing-wrapper.style1 .tab-section {
   padding: 30px 0 10px;
-  margin-bottom: 40px;
 }
 .pricing-wrapper.style1 .tab-section .nav-pills {
   padding: 7px 7px;
@@ -7976,11 +7994,19 @@ input.main-search-input::placeholder {
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
 }
+
 .pricing-wrapper.style1 .tab-section .nav-pills .nav-link.active {
   color: var(--white);
-  background-color: var(--theme);
+  background-color: var(--black);
   margin-right: 4px;
 }
+
+
+.pricing-wrapper.style_amazon .tab-section .nav-pills .nav-link.active {
+  background-color: #E8AC2A;
+}
+
+
 @media (max-width: 767px) {
   .pricing-wrapper.style1 .tab-section {
     flex-direction: column;
@@ -8704,19 +8730,24 @@ input.main-search-input::placeholder {
 .news-details-area .blog-post-details .single-blog-post .post-content h3 a:hover {
   color: var(--theme);
 }
-.news-details-area .blog-post-details .single-blog-post .post-content .hilight-text {
+.hilight-text {
   border-left: 4px solid var(--theme);
   padding: 40px;
   background-color: #F5F5F5;
 }
-.news-details-area .blog-post-details .single-blog-post .post-content .hilight-text p {
-  max-width: 650px;
+
+.hilight-text.style_amazon {
+  border-left: 4px solid #E8AC2A;
+}
+
+.hilight-text p {
+  /*max-width: 650px;*/
   font-weight: 500;
   text-transform: capitalize;
   font-style: italic;
   line-height: 26px;
 }
-.news-details-area .blog-post-details .single-blog-post .post-content .hilight-text svg {
+.hilight-text svg {
   float: right;
   margin-top: -10px;
 }
