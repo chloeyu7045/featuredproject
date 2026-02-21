@@ -76,6 +76,7 @@ Description: Niotech - App Landing HTML Template <
   --bg-1: #161921;
   --bg-2: #F6F7FF;
   --bg-blue:#edefff;
+  --bg-blue-light:#ecf4fe;
   --bg-red:#fce0e2;
   --bg-blue-darker:#d2d7ff;
   --box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.06);
@@ -2265,6 +2266,10 @@ input[type=radio]:checked ~ label::before {
   max-width: 770px;
 }
 
+.mxw-960 {
+  max-width: 960px;
+}
+
 .mxw-300 {
   max-width: 300px;
 }
@@ -3823,6 +3828,11 @@ input.main-search-input::placeholder {
 .section-padding {
   padding: 120px 0;
 }
+
+.section-padding.bottom {
+  padding: 0  0 120px 0;
+}
+
 .section-padding.small {
   padding: 40px;
 }
@@ -7492,10 +7502,9 @@ input.main-search-input::placeholder {
 }
 
 .testimonial-wrapper-3 {
-  padding: 50px;
+  padding: 50px 0;
   background-color: var(--white);
   display: flex;
-  /*align-items: center;*/
   justify-content: space-between;
   position: relative;
 }
@@ -7737,7 +7746,7 @@ input.main-search-input::placeholder {
 }
 
 .how-work-wrapper {
-  border-top: 1px solid var(--border);
+  /*border-top: 1px solid var(--border);*/
   padding-top: 60px;
 }
 @media (max-width: 575px) {
@@ -7803,19 +7812,19 @@ input.main-search-input::placeholder {
     margin-left: 0;
   }
 }
-.what-we-wrapper .what-we-content .section-title p {
+.what-we-content .section-title p {
   font-weight: 500;
   color: #565656;
   font-size: 15px;
 }
-.what-we-wrapper .what-we-content .list-items-area {
+.what-we-content .list-items-area {
   margin-top: 30px;
 }
-.what-we-wrapper .what-we-content .list-items-area .list-items , .wcu-wrapper .list-items-area .list-items {
+.what-we-content .list-items-area .list-items , .wcu-wrapper .list-items-area .list-items {
   display: flex;
   gap: 20px;
 }
-.what-we-wrapper .what-we-content .list-items-area .list-items:not(:last-child) , .wcu-wrapper .list-items-area .list-items:not(:last-child){
+ .what-we-content .list-items-area .list-items:not(:last-child) , .wcu-wrapper .list-items-area .list-items:not(:last-child){
   border-bottom: 1px solid var(--border);
   margin-bottom: 30px;
   padding-bottom: 30px;
@@ -7985,6 +7994,7 @@ input.main-search-input::placeholder {
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
+ background-color: var(--white);
 }
 .pricing-wrapper.style1 .tab-section .nav-pills .nav-link {
   color: var(--text);
@@ -8025,6 +8035,7 @@ input.main-search-input::placeholder {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
+  background-color: var(--bg-blue-light);
 }
 .pricing-section-3 .section-title .text {
   font-weight: 500;
