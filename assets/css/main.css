@@ -6359,7 +6359,7 @@ input.main-search-input::placeholder {
   width: 100%;
   height: 100%;
   border-radius: 26px 0px 0px 26px;
-  border: 1rem solid #d0cbec;
+  border: 1rem solid transparent;
 }
 
 .hero-3 .hero-image .mobile-image {
