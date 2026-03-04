@@ -1,14 +1,6 @@
-/*-----------------------------------------------------------------
-Theme Name: Niotech
-Author: Gramentheme
-Author URI: https://themeforest.net/user/gramentheme
-Version: 1.0.0 
-Description: Niotech - App Landing HTML Template <
-
--------------------------------------------------------------------
+/*-------------------------------------------------------------------
  CSS TABLE OF CONTENTS
 -------------------------------------------------------------------
-
     01.Mixins
     02.Variables
     03.Typography
@@ -72,6 +64,7 @@ Description: Niotech - App Landing HTML Template <
   --border-3: #D8D8D8;
   --border-4: #E0E0E0;
   --border-5: #565656;
+  --border-6: #a1a1a1;  
   --border-red: #EF454E;
   --bg-1: #161921;
   --bg-2: #F6F7FF;
@@ -154,6 +147,13 @@ h2 {
     font-size: 28px;
   }
 }
+
+@media (max-width: 414px) {
+  h2 {
+    font-size: 22px;
+  }
+}
+
 
 h3 {
   font-size: 18px;
@@ -6290,7 +6290,7 @@ input.main-search-input::placeholder {
   color: #1AD079;
 }
 .hero-3 .hero-content h1 {
-  font-size: 80px;
+  font-size: 72px;
   font-weight: 700;
   letter-spacing: -1.6px;
   line-height: 125%;
@@ -6319,7 +6319,7 @@ input.main-search-input::placeholder {
 }
 @media (max-width: 575px) {
   .hero-3 .hero-content h1 {
-    font-size: 34px;
+    font-size: 33px;
   }
 }
 .hero-3 .hero-content h1 span {
@@ -6377,6 +6377,10 @@ input.main-search-input::placeholder {
   .hero-3 .hero-image .mobile-image {
     max-width: 100px;
   }
+  .hero-3 .hero-content .btn-wrapper {
+      margin-top: 20px;
+
+    }
 }
 @media (max-width: 1199px) {
   .hero-3 .hero-image {
@@ -6532,6 +6536,9 @@ input.main-search-input::placeholder {
 .about-wrapper-3 .about-image {
   margin-left: -70%;
 }
+
+
+
 @media (max-width: 1199px) {
   .about-wrapper-3 .about-image {
     margin-left: 0;
@@ -6795,6 +6802,7 @@ input.main-search-input::placeholder {
   -o-transform: rotate(0);
 }
 .wp-content .accordion-item .accordion-header .accordion-button.collapsed , .title_completion{
+  display: flex;
   background-color: transparent;
   border: 1px solid var(--border);
   padding: 18px 20px;
@@ -7539,24 +7547,7 @@ input.main-search-input::placeholder {
   font-weight: 500;
   color: #515151;
 }
-@media (max-width: 767px) {
-  
 
-
-  .testimonial-section-3 .section-title-area {
-
-      align-items: start;
-   }
-
-  .testimonial-wrapper-3 .tesimonial-content:first-child {
-  width: 100%;
-}
-
-.testimonial-wrapper-3 .tesimonial-content:last-child {
-  width: 100%;
-}
-
-}
 .testimonial-wrapper-3 .tesimonial-content .client-info-area {
   margin-top: 70px;
   display: flex;
@@ -7583,6 +7574,28 @@ input.main-search-input::placeholder {
 .testimonial-wrapper-3 .thumb img {
   width: 100%;
   height: 100%;
+}
+
+@media (max-width: 767px) {
+  
+  .testimonial-section-3 .section-title-area {
+      display: block;
+      
+   }
+
+  .testimonial-wrapper-3 .tesimonial-content:first-child {
+  width: 100%;
+  }
+
+.testimonial-wrapper-3 .tesimonial-content:last-child {
+  width: 100%;
+}
+
+.testimonial-section-3 .section-title-area .array-button {
+    margin-right: 16px;
+    justify-content:right!important;
+  }
+
 }
 
 /* 25.Feature */
@@ -8037,6 +8050,11 @@ input.main-search-input::placeholder {
   background-position: top center;
   background-color: var(--bg-blue-light);
 }
+
+.pricing-section-3 hr{
+ color:var(--border-6);
+}
+
 .pricing-section-3 .section-title .text {
   font-weight: 500;
   color: #565656;
